@@ -8,11 +8,16 @@
   </div>
 </template>
 
-<style lang="sass" scoped>
+<style lang="sass">
 // Default Settings
 *
   font-family: 'Open Sans', sans-serif, 'ubuntu'
   padding: 0
   margin: 0
   box-sizing: border-box
+  line-height: 1.5
+  transition: all 150ms ease-in-out
+
+:root
+  --base-color: #1149b6
 </style>
