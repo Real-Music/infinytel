@@ -1,12 +1,23 @@
 <template>
   <div id="baseIndex">
+    <div class="contact__us">
+      <div class="contact__us__wrapper">
+        <div class="left">
+          <p>Welcome to INFINYTEL</p>
+        </div>
+        <div class="right">
+          <a href="mailto:infinytel@gmail.com">infinytel@gmail.com</a>
+          <span>+237 677464284</span>
+        </div>
+      </div>
+    </div>
     <nav>
       <div class="nav__wrapper">
         <div class="logo">
           <img
             src="@/assets/logo/logo.png"
             alt="INFINYTEL"
-            width="100"
+            width="115"
             title="INFINYTEL AT THE EDGE OF YOUR BUSINESS"
           />
         </div>
@@ -39,6 +50,7 @@
         </ul>
       </div>
     </nav>
+
     <div class="mobile_nav_wrapper" :class="[toggle ? '' : 'hide']">
       <header>
         <div class="nav__wrapper">
@@ -128,7 +140,7 @@ $bg: #edf2f7
   font-weight: bolder
 @mixin nav($nav__wrapper, $logo,$ul,$li,$a,$span)
   #{$nav__wrapper}
-      width: 90%
+      width: 70%
       height: 100px
       margin: 0 auto
       display: flex
@@ -210,10 +222,11 @@ $bg: #edf2f7
       background-color: red
       height: 100px
       width: 100%
-      background-color: white
+      background-color: var(--white-bg)
       box-shadow: $shadow
       @include nav('.nav__wrapper','.logo','ul','li','a','span')
     .mobile__nav__links
+      background-color: var(--white-bg)
       ul
         width: 80%
         margin: 0 auto
@@ -231,14 +244,46 @@ $bg: #edf2f7
               color: white
 
   // Web View
+  div.contact__us
+    padding: 5px 0
+    background-color: var(--base-color)
+    display: flex
+    .contact__us__wrapper
+      width: 70%
+      margin: 0 auto
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      align-items: center
+      color: var(--white-text)
+      font-size: 13px
+      place-items: center
+      p
+        margin: unset
+      .right
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        place-items: center
+        a
+          @include links
+          color: var(--white-text)
+          margin-right: 20px
+          font-weight: unset
+          font-size: 13px
+
   nav
     width: 100%
     height: 100px
-    background-color: white
+    background-color: var(--white-bg)
     box-shadow: $shadow
     @include nav('.nav__wrapper','.logo','ul','li','a','span')
 
-  @media (max-width: 740px)
+  @media (max-width: 1020px)
+    nav .nav__wrapper,.contact__us .contact__us__wrapper
+      width: 80%
+
+  @media (max-width: 820px)
     nav .nav__wrapper ul
       li
         display: none
@@ -246,12 +291,20 @@ $bg: #edf2f7
         display: block
     .mobile_nav_wrapper header .nav__wrapper .logo, nav .nav__wrapper .logo,nav .nav__wrapper ul li,.mobile_nav_wrapper header .nav__wrapper ul li
       margin: unset
-    nav .nav__wrapper,.mobile_nav_wrapper header .nav__wrapper, .mobile_nav_wrapper .mobile__nav__links ul
+    nav .nav__wrapper,.mobile_nav_wrapper header .nav__wrapper, .mobile_nav_wrapper .mobile__nav__links ul,div.contact__us .contact__us__wrapper
       width: 80%
 
+  @media (max-width: 560px)
+    div.contact__us .contact__us__wrapper
+      .left
+        display: none
+      .right
+        width: 100%
+        padding: 0 5px
+
   @media (max-width: 300px)
-    nav .nav__wrapper,.mobile_nav_wrapper header .nav__wrapper
-      width: 90%
-    .mobile_nav_wrapper .mobile__nav__links ul
+    nav .nav__wrapper,.mobile_nav_wrapper header .nav__wrapper,div.contact__us .contact__us__wrapper,.mobile_nav_wrapper .mobile__nav__links ul
       width: 100%
+    // .mobile_nav_wrapper .mobile__nav__links ul
+    //   width: 100%
 </style>

@@ -20,4 +20,13 @@
 
 :root
   --base-color: #1149b6
+  --base-green: #3dbd00
+  --white-bg: #ffffff
+  --white-text: #ffffff
+
+.carousel-inner
+  height: 100%
+  img
+    height: 100%
+    object-fit: cover
 </style>
