@@ -102,6 +102,78 @@
             </div>
           </div>
         </div>
+
+        <!-- Why Choose Us -->
+        <div class="why__choose__us">
+          <div class="why__choose__us__wrapper">
+            <div class="why__title">
+              <h3>Why choose Us</h3>
+            </div>
+            <div class="why__cards">
+              <div class="why__cards__item">
+                <img src="../../assets/Shape/1.svg" alt="1" />
+                <h3>Reason to Choose us</h3>
+                <p>
+                  93% of client's rate us
+                  <br />
+                  <span>
+                    <strong>
+                      <i class="fas fa-quote-left"></i> 5 OUT 5
+                      <i class="fas fa-quote-right"></i>
+                    </strong>
+                  </span>
+                  <br />for response and communication.
+                </p>
+              </div>
+              <div class="why__cards__item">
+                <img src="../../assets/Shape/2.svg" alt="2" />
+                <h3>Reason to Choose us</h3>
+                <p>
+                  90% of client's rate our services as
+                  <br />
+                  <span>
+                    <strong>
+                      <i class="fas fa-quote-left"></i>
+                      Excellent
+                      <i class="fas fa-quote-right"></i>
+                    </strong>
+                  </span>
+                </p>
+              </div>
+              <div class="why__cards__item">
+                <img src="../../assets/Shape/3.svg" alt="3" />
+                <h3>Reason to Choose us</h3>
+                <p>
+                  80% of client's have used our services for
+                  <br />
+                  <span>
+                    <strong>
+                      <i class="fas fa-quote-left"></i>
+                      5 years
+                      <i class="fas fa-quote-right"></i>
+                    </strong>
+                  </span>
+                  <br />or more.
+                </p>
+              </div>
+              <div class="why__cards__item">
+                <img src="../../assets/Shape/4.svg" alt="4" />
+                <h3>Reason to Choose us</h3>
+                <p>
+                  99% of client's have rate us for
+                  <br />
+                  <span>
+                    <strong>
+                      <i class="fas fa-quote-left"></i>
+                      Safety Management.
+                      <i class="fas fa-quote-right"></i>
+                    </strong>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </home>
   </div>
@@ -199,10 +271,6 @@ export default {
       .service__title
         padding: 80px 0
         text-align: center
-        h3
-          color: var(--base-color)
-          font-weight: bolder
-          letter-spacing: -1.5px
         p
           width: 70%
           margin: 0 auto
@@ -274,4 +342,44 @@ export default {
                 color: white
                 border-radius: 5px
                 background: black
+
+    .why__choose__us
+      width: 100%
+      // background: red
+      @media screen and (max-width: 1386px)
+        background-color: #eeeeee
+      .why__choose__us__wrapper
+        background-color: #eeeeee
+        width: 80%
+        margin: 20px auto
+        text-align: center
+        padding: 40px
+        .why__title h3
+          color: black
+          padding: 20px
+        .why__cards
+          display: grid
+          grid-template-columns: repeat(4,1fr)
+          column-gap: 50px
+          @media screen and (max-width: 1280px)
+            column-gap: 0px
+          @media screen and (max-width: 1120px)
+            grid-template-columns: repeat(2,1fr)
+            grid-gap: 50px
+          @media screen and (max-width: 720px)
+            grid-template-columns: unset
+          .why__cards__item
+            background: white
+            padding: 20px
+            border-radius: 5px
+            img
+              height: 100px
+              width: 100px
+              margin-bottom: 20px
+            h3
+              font-size: 18px
+              color: black
+            p
+              width: 80%
+              margin: 0 auto
 </style>
