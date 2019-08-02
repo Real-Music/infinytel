@@ -216,8 +216,9 @@ $bg: #edf2f7
     width: 100%
     position: fixed
     left: 0
-    top: 0%
+    top: 30px
     visibility: visible
+    z-index: 10
     header
       background-color: red
       height: 100px
@@ -302,9 +303,11 @@ $bg: #edf2f7
         width: 100%
         padding: 0 5px
 
-  @media (max-width: 300px)
+  @media (max-width: 333px)
     nav .nav__wrapper,.mobile_nav_wrapper header .nav__wrapper,div.contact__us .contact__us__wrapper,.mobile_nav_wrapper .mobile__nav__links ul
       width: 100%
-    // .mobile_nav_wrapper .mobile__nav__links ul
-    //   width: 100%
+  @media (max-width: 270px)
+    div.contact__us .contact__us__wrapper
+      span
+        visibility: hidden
 </style>

@@ -35,7 +35,74 @@
             img-src="http://www.fotoab.com/wp-content/uploads/2017/11/Selfie_officeworker.jpg"
           ></b-carousel-slide>
         </b-carousel>
+        <!-- Caard -->
       </div>
+      <div class="card__wrapper">
+        <div class="card__item">
+          <h5>Title Something</h5>
+          <!-- eslint-disable-next-line -->
+          <p>Find out more about our range of everyday and savings accounts. Easy to open only 2 minute.</p>
+          <p>
+            <router-link to>Contact Us →</router-link>
+          </p>
+        </div>
+        <div class="card__item">
+          <h5>Title Something</h5>
+          <!-- eslint-disable-next-line -->
+          <p>We have accounts that provide a comfortable fit for any lifestyle. Find the right account today</p>
+          <p>
+            <router-link to>Contact Us →</router-link>
+          </p>
+        </div>
+        <div class="card__item">
+          <h5>Title Something</h5>
+          <!-- eslint-disable-next-line -->
+          <p>Your business is unique and tailored to meet the needs of your customers,first prioraty is customer Satisfaction</p>
+          <p>
+            <router-link to>Contact Us →</router-link>
+          </p>
+        </div>
+      </div>
+      <section>
+        <!-- Content -->
+        <div class="services__off">
+          <div class="service__title">
+            <h3>Discover More About Our Service</h3>
+            <!-- eslint-disable-next-line -->
+            <p>We will match you with a service that meets your financial needs. In short-term liquidity, striving to make profit within 24 hours of application.</p>
+          </div>
+          <div class="offers">
+            <div class="offers__item">
+              <div class="offer__img">
+                <img src="../../assets/services/10-12.jpg" width="100" />
+              </div>
+              <div class="offer__details">
+                <h4>Web & App Development</h4>
+                <hr />
+                <!-- eslint-disable-next-line -->
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. nisi, magnam quas vitae architecto enim. Assumenda impedit. Lorem ipsum dolor sit amet. Lorem, ipsum.</p>
+                <p>
+                  <router-link to>Read More →</router-link>
+                </p>
+              </div>
+            </div>
+            <div class="offers__item">
+              <div class="offer__img">
+                <img src="../../assets/services/10-12.jpg" width="100" />
+              </div>
+              <div class="offer__details">
+                <h4>Network and Cabling</h4>
+                <hr />
+                <!-- eslint-disable-next-line -->
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. nisi, magnam quas vitae architecto enim. Assumenda impedit. Lorem ipsum dolor sit amet. Lorem, ipsum.</p>
+                <p>
+                  <router-link to>Read More →</router-link>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </home>
   </div>
 </template>
@@ -76,4 +143,135 @@ export default {
       height: 100%
       .carousel-item
         height: 100%
+  .card__wrapper
+    display: flex
+    justify-content: center
+    z-index: 1
+    place-items: center
+    background:
+      // image: url('https://www.barraques.cat/pngfile/big/103-1038226_networking-icon-network-png.png')
+      size: contain
+      color: var(--base-color)
+    @media screen and (max-width: 730px)
+      flex-direction: column
+    .card__item
+      position: relative
+      top: -90px
+      height: fit-content
+      width: 400px
+      background-color: white
+      border-radius: 20px
+      z-index: 1
+      padding: 50px
+      margin: 0 20px
+      @media screen and (max-width: 1450px)
+        padding: 30px 20px
+      @media screen and (max-width: 1050px)
+        &:last-child
+          display: none
+      @media screen and (max-width: 730px)
+        &:first-child
+          margin-bottom: 20px
+      @media screen and (max-width: 430px)
+        width: unset
+      h5
+        color: var(--base-color)
+        font-weight: bolder
+        font-family: 'Roboto', Times, sans-serif !important
+        line-height: 100%
+        font-weight: 900
+        letter-spacing: -1px
+        word-spacing: 0px
+        padding-bottom: 5px
+      p
+        text-align: justify
+        a
+          text-decoration: none
+          padding: 7px 10px
+          color: white
+          background: var(--base-green)
+          border-radius: 5px
+  section
+    margin: 0 auto
+    .services__off
+      display: grid
+      grid-template-rows: auto 1fr
+      .service__title
+        padding: 80px 0
+        text-align: center
+        h3
+          color: var(--base-color)
+          font-weight: bolder
+          letter-spacing: -1.5px
+        p
+          width: 70%
+          margin: 0 auto
+          color: unset
+      .offers
+        display: grid
+        grid-template-columns: 1fr 1fr
+        place-items: center
+        width: 100%
+        height: 100%
+        text-align: center
+        @media screen and (max-width: 1150px)
+          grid-template-columns: unset
+        .offers__item
+          background-color: #FFFFFF
+          overflow: hidden
+          margin-bottom: 90px
+          border-radius: 30px
+          align-items: center
+          box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2)
+          display: flex
+          overflow: hidden
+          @media screen and (max-width: 790px)
+            flex-direction: column
+            width: 80%
+            border-radius: unset
+          .offer__img
+            width: 400px
+            overflow: hidden
+            display: grid
+            place-content: center
+            @media screen and (max-width: 1450px)
+              width: unset
+              padding: 0 20px
+            @media screen and (max-width: 790px)
+              width: 100%
+            img
+              width: 220px
+              height: 220px
+              object-fit: cover
+              border-radius: 50%
+              @media screen and (max-width: 1450px)
+                width: 200px
+                height: 200px
+              @media screen and (max-width: 790px)
+                width: 100%
+                border-radius: unset
+          .offer__details
+            width: 300px
+            padding: 20px
+            background: rgba(17,73,182,1)
+            border-radius: 30px
+            @media screen and (max-width: 790px)
+              width: unset
+              border-radius: unset
+              margin: 20px
+            h4
+              font-weight: bolder
+              letter-spacing: -1.5px
+              color: white
+              font-size: 19px
+            p
+              text-align: justify
+              color: white
+              @media screen and (max-width: 1450px)
+                font-size: 14px
+              a
+                padding: 7px 10px
+                color: white
+                border-radius: 5px
+                background: black
 </style>
