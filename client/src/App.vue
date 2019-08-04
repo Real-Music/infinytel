@@ -29,6 +29,23 @@ h3 {
   letter-spacing: -1.5px;
 }
 
+a {
+  text-decoration: none;
+  padding: 7px 10px;
+  color: white;
+  background: var(--base-green);
+  border-radius: 5px;
+}
+
+button {
+  padding: 7px 20px;
+  color: white;
+  background: var(--base-green);
+  outline: none;
+  border: none;
+  border-radius: 5px !important;
+}
+
 .carousel-inner {
   height: 100%;
 }

@@ -1,4 +1,5 @@
 <template>
+  <!--  eslint-disable -->
   <div id="index">
     <home>
       <div id="carousel-container">
@@ -174,6 +175,47 @@
             </div>
           </div>
         </div>
+
+        <!-- Apply Now -->
+        <div class="apply__now">
+          <div class="apply__now__wrapper">
+            <div class="apply__title">
+              <h3>We Are Going To Contact You</h3>
+            </div>
+
+            <div class="form">
+              <form @submit.prevent>
+                <div class="form_group">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" id="name" required />
+                </div>
+                <div class="form_group">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" required />
+                </div>
+                <div class="form_group">
+                  <label for="phone">Phone</label>
+                  <input type="text" name="phone" id="phone" required />
+                </div>
+                <div class="form_group">
+                  <label for="service">Your Interest</label>
+                  <select name="service" id="service" v-model="service" required>
+                    <option
+                      v-for="(service, index) in services"
+                      :key="index"
+                      :value="service"
+                    >{{ service }}</option>
+                  </select>
+                </div>
+                <div class="form_group msg">
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message" cols="30" rows="5" placeholder="Optional"></textarea>
+                </div>
+                <button>Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </section>
     </home>
   </div>
@@ -184,7 +226,14 @@ export default {
   data() {
     return {
       slide: 0,
-      sliding: null
+      sliding: null,
+      services: [
+        "IT Consultancy",
+        "Network and Cabling",
+        "Web & Apps Dev",
+        "Video Surveillances",
+        "All"
+      ]
     };
   },
   methods: {
@@ -199,6 +248,28 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+$shadow: 0px 3px 10px rgba(0,0,0,.10)
+$box-padding: .8em
+$color-primary: #f857a8
+$color-secondary:#ff5858
+$color-neutral-lt: #fff
+$color-neutral-med: #ddd
+$headings-font: "Open Sans"
+
+@mixin icon-box
+    background-color: #fff
+    box-shadow: $shadow
+    padding: $box-padding
+
+@mixin no-space
+    padding: 0px
+    margin: 0px
+
+@mixin main-gradient
+    background: $color-primary
+    background: -webkit-linear-gradient(45deg, $color-primary, $color-secondary)
+    background: linear-gradient(45deg, $color-primary, $color-secondary)
+
 #index
   #carousel-container
     position: relative
@@ -251,7 +322,6 @@ export default {
         font-weight: bolder
         font-family: 'Roboto', Times, sans-serif !important
         line-height: 100%
-        font-weight: 900
         letter-spacing: -1px
         word-spacing: 0px
         padding-bottom: 5px
@@ -345,7 +415,7 @@ export default {
 
     .why__choose__us
       width: 100%
-      // background: red
+      background: #eeeeee
       @media screen and (max-width: 1386px)
         background-color: #eeeeee
       .why__choose__us__wrapper
@@ -382,4 +452,64 @@ export default {
             p
               width: 80%
               margin: 0 auto
+    .apply__now
+      background-color: white
+      width: 100%
+      height: fit-content
+      .apply__now__wrapper
+        background-color: white
+        width: 80%
+        margin: 20px auto
+        text-align: center
+        padding: 40px 0
+        .apply__title h3
+          color: black
+          padding: 20px
+        .form
+          text-align: left
+          width: 70%
+          margin: 0 auto
+          @media screen and (min-width: 1920px)
+            width: 50%
+          @media screen and (max-width: 1000px)
+            width: 100%
+          form
+            display: grid
+            grid-template-columns: repeat(2,1fr)
+            grid-gap: 20px
+            @media screen and (max-width: 690px)
+              all: unset
+            .msg
+              grid-column: 1/3
+            .form_group
+              display: block
+              @media screen and (max-width: 690px)
+                margin-bottom: 20px
+              label
+                display: block
+                margin: unset
+              input, select
+                display: block
+                width: 100%
+                height: calc(1.5em + 0.75rem + 2px)
+                padding: 0.375rem 0.75rem
+                font-size: 1rem
+                font-weight: 400
+                line-height: 1.5
+                color: #495057
+                background-color: #fff
+                background-clip: padding-box
+                border: 1px solid #ced4da
+                border-radius: 0.25rem
+                outline: none
+              select
+                cursor: pointer
+              textarea
+                resize: none
+                width: 100%
+                padding: 0.375rem 0.75rem
+                outline: none
+            button
+              grid-row: 4
+              width: fit-content
 </style>
