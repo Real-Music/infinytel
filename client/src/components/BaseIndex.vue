@@ -26,19 +26,19 @@
             <router-link to="/">Home</router-link>
           </li>
           <li>
-            <router-link to="/">Services</router-link>
-          </li>
-          <li>
             <router-link to="/">Blog</router-link>
           </li>
           <li>
-            <router-link to="/">Testimonies</router-link>
+            <router-link to="/">Services</router-link>
           </li>
           <li>
-            <router-link to="/">About</router-link>
+            <router-link to="/">Partners</router-link>
           </li>
           <li>
             <router-link to="/">Contact</router-link>
+          </li>
+          <li>
+            <router-link to="/">About</router-link>
           </li>
           <li id="icons">
             <div id="nav__icon" @click="hamburger" :class="{ open: toggle }">
@@ -100,6 +100,85 @@
     <main class="body__wrapper">
       <slot></slot>
     </main>
+    <footer>
+      <div class="footer__wrapper">
+        <div class="footer__title">
+          <div class="logo">
+            <!-- eslint-disable-next-line -->
+            <img
+              src="http://localhost:3000/images/logo/logo.png"
+              alt="Infinytel"
+              width="70"
+              style="display: inline-block"
+            />
+            <!-- eslint-disable-next-line -->
+            <h3 style="display: inline-block; margin-left: 20px; color: white">INFINYTEL</h3>
+          </div>
+          <div class="news__letter">
+            <form>
+              <!-- eslint-disable-next-line -->
+              <input type="email" name="email" id="email" placeholder="Your email" />
+              <!-- eslint-disable-next-line -->
+              <input type="submit" value="Subscribe to our newsletter" />
+            </form>
+          </div>
+        </div>
+        <div class="footer__content">
+          <div class="about">
+            <!-- eslint-disable-next-line -->
+            <p>Infinytel app is a Mobile Banking Application for digital loans. It is a holistic platform for all loan products aimed at improving your borrowing experience.</p>
+            <small>
+              <!-- eslint-disable-next-line -->
+              <i class="fas fa-map-marker-alt"></i> Malygo Street, Buea, Cameroon
+            </small>
+          </div>
+          <div class="url">
+            <ul>
+              <li>
+                <router-link to="/">Home</router-link>
+              </li>
+              <li>
+                <router-link to="/">Blog</router-link>
+              </li>
+              <li>
+                <router-link to="/">Services</router-link>
+              </li>
+              <li>
+                <router-link to="/">Partners</router-link>
+              </li>
+              <li>
+                <router-link to="/">Contact</router-link>
+              </li>
+              <li>
+                <router-link to="/">About</router-link>
+              </li>
+            </ul>
+          </div>
+          <div class="social">
+            <ul>
+              <li>
+                <router-link to="/">Facebook</router-link>
+              </li>
+              <li>
+                <router-link to="/">Twitter</router-link>
+              </li>
+              <li>
+                <router-link to="/">Instagram</router-link>
+              </li>
+              <li>
+                <router-link to="/">YouTube</router-link>
+              </li>
+              <li>
+                <router-link to="/">LinkIn</router-link>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copy">
+          <p>&copy;2019INFINYTEL</p>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -272,7 +351,63 @@ $bg: #edf2f7
           margin-right: 20px
           font-weight: unset
           font-size: 13px
-
+  footer
+    background-color: #343a40!important
+    color: white
+    padding: 50px
+    .footer__wrapper
+      width: 80%
+      margin: 0 auto
+      @media screen and (max-width: 1040px)
+        width: 100%
+      .footer__title
+        display: grid
+        grid-template-columns: 1fr 2fr
+        // background-color: red
+        align-items: center
+        @media screen and (max-width: 820px)
+          grid-template-columns: unset
+        form
+          display: grid
+          grid-template-columns: 1fr 1fr
+          grid-gap: 20px
+          @media screen and (max-width: 590px)
+            grid-template-columns: unset
+          input
+            display: inline-block
+            height: calc(1.5em + 0.75rem + 2px)
+            padding: 0.375rem 0.75rem
+            font-size: 1rem
+            font-weight: 400
+            line-height: 1.5
+            color: #495057
+            background-color: #fff
+            background-clip: padding-box
+            border: 1px solid #ced4da
+            // border-radius: 0.25rem
+            outline: none
+            &:first-child
+              width: 100%
+              min-width: fit-content
+            &:last-child
+              cursor: pointer
+              &:hover
+                color: white
+                background-color: var(--base-green)
+      .footer__content
+        display: grid
+        grid-template-columns: repeat(3,1fr)
+        grid-gap: 20px
+        @media screen and (max-width: 820px)
+          grid-template-rows: auto 1fr
+          grid-template-columns: repeat(2, 1fr)
+          .about
+           grid-column: 1/3
+           margin: 10px 0
+        ul
+          list-style: none
+          a
+            color: white
   nav
     width: 100%
     height: 100px

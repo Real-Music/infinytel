@@ -9,12 +9,16 @@
 </template>
 <style>
 * {
-  font-family: "Open Sans", sans-serif, "ubuntu";
+  font-family: "Open Sans", sans-serif, "ubuntu" !important;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   line-height: 1.5;
   transition: all 150ms ease-in-out;
+}
+
+body {
+  all: unset !important;
 }
 :root {
   --base-color: #1149b6;
@@ -29,13 +33,13 @@ h3 {
   letter-spacing: -1.5px;
 }
 
-a {
+/* a {
   text-decoration: none;
   padding: 7px 10px;
   color: white;
   background: var(--base-green);
   border-radius: 5px;
-}
+} */
 
 button {
   padding: 7px 20px;
@@ -46,6 +50,11 @@ button {
   border-radius: 5px !important;
 }
 
+.carousel-control-next,
+.carousel-control-prev {
+  z-index: 10;
+}
+
 .carousel-inner {
   height: 100%;
 }
@@ -54,7 +63,10 @@ button {
   object-fit: cover;
 }
 .carousel-indicators,
-.carousel-caption {
+.carousel-caption,
+.carousel-caption h5,
+.carousel-caption p {
   bottom: 100px !important;
+  z-index: 10 !important;
 }
 </style>
