@@ -216,6 +216,104 @@
             </div>
           </div>
         </div>
+
+        <!-- Simple blog -->
+        <div class="simple__blog">
+          <h3>Get Started Simple &amp; Securely</h3>
+        </div>
+
+        <!-- Testimony -->
+        <div class="testimonial__blog">
+          <div class="testimonial__wrapper">
+            <div class="testimony__title">
+              <h3>Some of our Awesome Testimonials</h3>
+            </div>
+            <div class="testimony__content">
+              <div class="testimony__items">
+                <p>
+                  <i class="fas fa-quote-left"></i> I loved the customer service you guys provided me. That was very nice...
+                  <i
+                    class="fas fa-quote-right"
+                  ></i>
+                </p>
+                <div class="image__wrapper">
+                  <img
+                    src="https://www.sickkidsfoundation.com/-/media/images/skf/about-us/governance-and-staff/board-of-directors/albertwang_378x378.jpg?h=378&w=378&la=en&hash=4A5D730373693165C89163BF134DF2807E398329"
+                    alt
+                  />
+                  <div>
+                    <span>Fedjio Raymond</span>
+                    <span>Web &amp; App Development</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimony__items">
+                <p>
+                  <i class="fas fa-quote-left"></i> I loved the customer service you guys provided me. That was very nice...
+                  <i
+                    class="fas fa-quote-right"
+                  ></i>
+                </p>
+                <div class="image__wrapper">
+                  <img
+                    src="https://www.sickkidsfoundation.com/-/media/images/skf/about-us/governance-and-staff/board-of-directors/albertwang_378x378.jpg?h=378&w=378&la=en&hash=4A5D730373693165C89163BF134DF2807E398329"
+                    alt
+                  />
+                  <div>
+                    <span>Fedjio Raymond</span>
+                    <span>Web &amp; App Development</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimony__items">
+                <p>
+                  <i class="fas fa-quote-left"></i> I loved the customer service you guys provided me. That was very nice...
+                  <i
+                    class="fas fa-quote-right"
+                  ></i>
+                </p>
+                <div class="image__wrapper">
+                  <img
+                    src="https://www.sickkidsfoundation.com/-/media/images/skf/about-us/governance-and-staff/board-of-directors/albertwang_378x378.jpg?h=378&w=378&la=en&hash=4A5D730373693165C89163BF134DF2807E398329"
+                    alt
+                  />
+                  <div>
+                    <span>Fedjio Raymond</span>
+                    <span>Web &amp; App Development</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Appointment -->
+        <div class="appointment">
+          <div class="appointment__wrapper">
+            <div class="appointment__title">
+              <h1>We are Here to Help You</h1>
+            </div>
+            <div class="appointment__content">
+              <div class="appointment__items">
+                <i class="fas fa-calendar-check"></i>
+                <h3>Appointment</h3>
+                <p>You can book an appointment and we get to talk one on one.</p>
+                <router-link to>Get Appointment</router-link>
+              </div>
+              <div class="appointment__items">
+                <i class="fas fa-phone-alt"></i>
+                <h3>Give Us a Call</h3>
+                <ul>
+                  <li>+237 670 678 660</li>
+                  <li>
+                    <a class="email" href="mailto:fedjioraymond@gmail.com">fedjioraymond@gmail.com</a>
+                  </li>
+                </ul>
+                <router-link to>Contact Us</router-link>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </home>
   </div>
@@ -248,28 +346,6 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-$shadow: 0px 3px 10px rgba(0,0,0,.10)
-$box-padding: .8em
-$color-primary: #f857a8
-$color-secondary:#ff5858
-$color-neutral-lt: #fff
-$color-neutral-med: #ddd
-$headings-font: "Open Sans"
-
-@mixin icon-box
-    background-color: #fff
-    box-shadow: $shadow
-    padding: $box-padding
-
-@mixin no-space
-    padding: 0px
-    margin: 0px
-
-@mixin main-gradient
-    background: $color-primary
-    background: -webkit-linear-gradient(45deg, $color-primary, $color-secondary)
-    background: linear-gradient(45deg, $color-primary, $color-secondary)
-
 #index
   #carousel-container
     position: relative
@@ -423,7 +499,7 @@ $headings-font: "Open Sans"
         width: 80%
         margin: 20px auto
         text-align: center
-        padding: 40px
+        padding: 100px 0
         .why__title h3
           color: black
           padding: 20px
@@ -511,5 +587,109 @@ $headings-font: "Open Sans"
                 outline: none
             button
               grid-row: 4
-              width: fit-content
+              // width: fit-content
+              background-color: black
+    // Simple blog
+    .simple__blog
+      background-color: var(--base-color)
+      height: 300px
+      h3
+        width: 60%
+        height: 100%
+        margin: 0 auto
+        display: grid
+        place-content: center
+        background:
+          image: linear-gradient(rgba(17, 73, 182, 0.5), rgba(17, 73, 182, 0.5)), url("https://www.sfgnetwork.com/media/bg-business-customer-care.jpg")
+          attachment: fixed
+          size: cover
+          repeat: no-repeat
+        color: white
+        padding: 20px
+        @media screen and (max-width: 690px)
+          width: 80%
+        @media screen and (max-width: 515px)
+          width: 100%
+    // Testimony
+    .testimonial__blog
+      background: #eeeeee
+      text-align: center
+      .testimonial__wrapper
+        width: 80%
+        margin: 0 auto
+        padding: 100px 0
+        @media screen and (max-width: 760px )
+          width: 90%
+        .testimony__title h3
+          color: black
+          padding: 20px
+        .testimony__content
+          display: grid
+          grid-template-columns: repeat(3,1fr)
+          width: 100%
+          margin: 0 auto
+          grid-gap: 20px
+          place-items: center
+          @media screen and (max-width: 1210px )
+            grid-template-columns: repeat(2, 1fr)
+          @media screen and (max-width: 580px )
+            grid-template-columns: repeat(1, 1fr)
+            row-gap: 40px
+          .testimony__items
+            p
+              // width: 350px
+              padding: 50px
+              background: white
+            .image__wrapper
+              text-align: left
+              display: flex
+              flex-wrap: wrap
+              div
+              img
+                height: 100px
+                margin-right: 10px
+                object-fit: cover
+              span
+                display: block
+    // Appointment
+    .appointment
+      padding: 100px 0
+      .appointment__wrapper
+        width: 80%
+        margin: 0 auto
+        text-align: center
+        .appointment__title h1
+          padding: 20px
+          color: black
+          font-weight: bolder !important
+        .appointment__content
+          display: flex
+          width: fit-content
+          flex-wrap: wrap
+          margin: 0 auto
+          .appointment__items
+            flex: 1 1 0
+            box-shadow: 0 4px 5px 0 rgba(112, 178, 68,0.1), 0 1px 10px 0 rgba(112, 178, 68,0.1), 0 2px 4px -1px rgba(112, 178, 68,0.2)
+            padding: 30px
+            ul
+              list-style-type: none
+            i.fas
+              font-size: 3.5em
+              color: var(--base-green)
+              margin: 10px 0
+            h3
+              color: black
+            a
+              background: var(--base-green)
+              color: white
+              border-radius: unset
+              &:hover
+                background-color: var(--base-color)
+                text-decoration: none
+            .email
+              all: unset
+              &:hover
+                cursor: pointer
+                background-color: unset
+                color: var(--base-color)
 </style>
