@@ -29,7 +29,7 @@
             <router-link to="/">Blog</router-link>
           </li>
           <li>
-            <router-link to="/">Services</router-link>
+            <router-link to="/service">Services</router-link>
           </li>
           <li>
             <router-link to="/">Partners</router-link>
@@ -79,19 +79,19 @@
             <router-link to="/">Home</router-link>
           </li>
           <li>
-            <router-link to="/">Services</router-link>
-          </li>
-          <li>
             <router-link to="/">Blog</router-link>
           </li>
           <li>
-            <router-link to="/">Testimonies</router-link>
+            <router-link to="/">Services</router-link>
           </li>
           <li>
-            <router-link to="/">About</router-link>
+            <router-link to="/">Partners</router-link>
           </li>
           <li>
             <router-link to="/">Contact</router-link>
+          </li>
+          <li>
+            <router-link to="/">About</router-link>
           </li>
         </ul>
       </div>
@@ -297,7 +297,8 @@ $bg: #edf2f7
     left: 0
     top: 30px
     visibility: visible
-    z-index: 10
+    z-index: 1000
+    background-color: rgba(0, 0, 0, 0.5)
     header
       background-color: red
       height: 100px
@@ -328,6 +329,9 @@ $bg: #edf2f7
     padding: 5px 0
     background-color: var(--base-color)
     display: flex
+    position: sticky
+    z-index: 100
+    top: 0
     .contact__us__wrapper
       width: 70%
       margin: 0 auto
@@ -413,6 +417,8 @@ $bg: #edf2f7
     height: 100px
     background-color: var(--white-bg)
     box-shadow: $shadow
+    position: sticky
+    top: 29px
     @include nav('.nav__wrapper','.logo','ul','li','a','span')
 
   @media (max-width: 1020px)

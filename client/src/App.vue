@@ -33,13 +33,13 @@ h3 {
   letter-spacing: -1.5px;
 }
 
-/* a {
+section a {
   text-decoration: none;
   padding: 7px 10px;
   color: white;
   background: var(--base-green);
   border-radius: 5px;
-} */
+}
 
 button {
   padding: 7px 20px;
