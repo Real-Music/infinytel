@@ -69,4 +69,8 @@ button {
   bottom: 100px !important;
   z-index: 10 !important;
 }
+
+ul {
+  margin-bottom: 0px;
+}
 </style>

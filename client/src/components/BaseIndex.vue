@@ -220,7 +220,7 @@ $bg: #edf2f7
 @mixin nav($nav__wrapper, $logo,$ul,$li,$a,$span)
   #{$nav__wrapper}
       width: 70%
-      height: 100px
+      height: 70px
       margin: 0 auto
       display: flex
       place-items: center
@@ -414,11 +414,12 @@ $bg: #edf2f7
             color: white
   nav
     width: 100%
-    height: 100px
+    height: 70px
     background-color: var(--white-bg)
     box-shadow: $shadow
     position: sticky
     top: 29px
+    z-index: 100
     @include nav('.nav__wrapper','.logo','ul','li','a','span')
 
   @media (max-width: 1020px)

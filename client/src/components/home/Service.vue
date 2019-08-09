@@ -23,7 +23,8 @@
             </li>
           </ul>
 
-          <div class="video__surveilllance">
+          <!-- Video Surveillance -->
+          <div v-if="false" class="video__surveilllance service">
             <div class="title">
               <h1>Video Surveillance</h1>
             </div>
@@ -296,6 +297,151 @@
               </ul>
             </div>
           </div>
+
+          <!-- Network and Cabling -->
+          <div v-if="false" class="network__cabling service">
+            <div class="title">
+              <h1>Networks and Cabling</h1>
+            </div>
+
+            <div class="content">
+              <p>
+                You need a network that you can rely on. One that supports your business needs, both now and in the future.
+                Support your investment in hardware and software by adopting an efficient network design, built using quality components and installed by experienced network engineers. This will give you the high-speed data and communication network that you need to excel.
+              </p>
+              <br />
+
+              <p>
+                <strong>We can provide you with the entire range of mission-critical network services for your business, from your local area network (LAN), to your wide area network (WAN) and wireless network (WLAN).</strong>Your network is particularly important as you look to take advantage of cloud and online backup services, improved communication services and the like. It powers your systems, transports your data and connects your users.
+                With the increase in BYOD and business mobility needs, it is also essential that your wireless network is fully integrated with your traditional cable network in a secure way.
+              </p>
+              <br />
+
+              <h5>
+                <strong>We can provide you with:</strong>
+              </h5>
+
+              <ul>
+                <li>
+                  <p>A comprehensive network and cabling audit to uncover snags and help plan for the future.</p>
+                </li>
+                <li>
+                  <p>A full consulting and business network design service from a proven team.</p>
+                </li>
+                <li>
+                  <p>Network upgrades, relocation and network refurbishment.</p>
+                </li>
+                <li>
+                  <p>Improved and secure connectivity to support your business needs.</p>
+                </li>
+                <li>
+                  <p>Completely new, compliant and future focused network design and installation.</p>
+                </li>
+                <li>
+                  <p>Ongoing 24x7x365 network monitoring and support.</p>
+                </li>
+              </ul>
+              <br />
+              <br />
+
+              <h2>Networks and Cabling Benefits</h2>
+              <br />
+
+              <h5>
+                <strong>You enjoy cabling infrastructure and a business network that meets both the current and future demands of your business.</strong>
+              </h5>
+              <p>With the speed of technological change and the introduction of big data, the Internet of Things (IoT) etc, it is imperative that you have a business network that can handle the demands that you put on it.</p>
+              <br />
+
+              <h5>
+                <strong>Specified by qualified network and structured cabling designers</strong>
+              </h5>
+              <p>Know that you are getting a standards-based, compliant business network that will work for your business, both now and in the future. Knowing that you have a network that you can rely on, built by experienced cabling engineers using reliable components, will give you the confidence to focus on other aspects of your business.</p>
+              <br />
+
+              <h5>
+                <strong>Use of high-quality cabling and terminations throughout. All work fully tested and guaranteed</strong>
+              </h5>
+              <p>As mentioned, we only use high-quality cabling, hardware and terminations and we fully test and guarantee all of our networks for added peace of mind. Anything less will lead to high maintenance costs, disappointment and issues.</p>
+              <br />
+
+              <h5>
+                <strong>Reducing the risk of downtime to your business.</strong>
+              </h5>
+              <p>If you network is old, disorganized and largely unstructured, it will have a huge impact on your business workflow and both the happiness and productivity of your team. With a well-documented cabling plan, you can minimize the costs of downtime and any future issues can be found and fixed quickly.</p>
+              <br />
+              <br />
+
+              <h5>
+                <strong>Networks and Cabling Features</strong>
+              </h5>
+
+              <ul>
+                <li>
+                  <p>We use market-leading components.</p>
+                </li>
+                <li>
+                  <p>Fully tested and guaranteed.</p>
+                </li>
+              </ul>
+              <br />
+              <br />
+
+              <h5>
+                <strong>Networks and Cabling Options</strong>
+              </h5>
+
+              <ul>
+                <li>
+                  <p>Working with your team or fully outsourced.</p>
+                </li>
+                <li>
+                  <p>Network Health Checks</p>
+                </li>
+                <li>
+                  <p>End-to-end network delivery.</p>
+                </li>
+                <li>
+                  <p>Delivery of individual networking elements.</p>
+                </li>
+                <li>
+                  <p>Range of connectivity options.</p>
+                </li>
+                <li>
+                  <p>Range of support and maintenance options.</p>
+                </li>
+              </ul>
+              <br />
+              <br />
+
+              <h5>
+                <strong>Allowing you to do more</strong>
+              </h5>
+
+              <ul>
+                <li>
+                  <p>Back up your critical data frequently.</p>
+                </li>
+                <li>
+                  <p>Adopt new applications and services with confidence.</p>
+                </li>
+                <li>
+                  <p>Ensure that your team remains productive.</p>
+                </li>
+                <li>
+                  <p>Help you remain secure.</p>
+                </li>
+                <li>
+                  <p>Makes future maintenance easy.</p>
+                </li>
+              </ul>
+              <br />
+              <br />
+            </div>
+          </div>
+
+          <!-- IT Consultancy -->
+          <div class="it_consultancy"></div>
         </div>
       </div>
     </home>
@@ -337,21 +483,26 @@ export default {
               margin-bottom: unset
             img
               margin-top: 20px
-            .video__surveilllance
+            ul
+              margin-left: 50px
+              li
+                margin: 5px 0
+            .service
               border-right: .5px solid #eaeaea
               border-left: .5px solid #eaeaea
               padding: 0 50px
-              ul li
-                margin: 5px 0
             ul.links
                 // width: 500px
+                position: sticky
+                top: 93px
+                background-color: white
                 display: flex
                 align-items: center
                 justify-content: space-between
                 list-style: none
                 padding: 0px
                 margin: 0px 0px 50px 0px
-                position: relative
+                // position: relative
 
             ul.links::before
                 content: ''
