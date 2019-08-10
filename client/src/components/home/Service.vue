@@ -441,7 +441,7 @@
           </div>
 
           <!-- IT Consultancy -->
-          <div v-if="true" class="it_consultancy service">
+          <div v-if="false" class="it_consultancy service">
             <div class="title">
               <h1>IT Consultancy</h1>
             </div>
@@ -503,7 +503,6 @@
                     <strong>You have reduced risk and reduced costs</strong>
                   </h5>
                   <p>By engaging with expert engineers who have a lot of exposure to and experience delivering similar projects for other customers, you are less likely to be affected by unforeseen issues that could potentially impact your IT project. The upfront cost may be higher than if you used an internal resource, but the time saved and the hassle avoided will mean reduced costs for you and your business.</p>
-                  <br />
                   <br />
                 </li>
               </ol>
@@ -875,6 +874,274 @@
               <br />
             </div>
           </div>
+
+          <div class="web__app__dev">
+            <div class="title">
+              <h1>Web and Apps Development</h1>
+            </div>
+
+            <div class="content">
+              <h2>We don’t just design websites, we build your business</h2>
+
+              <p>Are you looking for the Best Digital Marketing, Software Development and Website Design company? Do you need professional Company Website? You are at the right place.</p>
+              <br />
+
+              <p>
+                <strong>Infinytel</strong> provides affordable and innovative solutions for Digital Marketing, Software Development, Website Design and Website Development. The company also specializing in Website Hosting, Domain Names Registration, Mobile Apps Development, Website Security and Web systems. Most importantly we create inbound digital marketing campaign for your business. With more than six years of experience, we have been tasked to give you a digital life so as to make your brand sells more online.
+              </p>
+              <br />
+
+              <p>We developed software and websites for various clients, and most importantly we are proud to be part of their success. Because our mission is to represent your business to digital life, we will assure that we will work together so as to make your business efficiently and smart, more visible and to draw more customers.</p>
+              <br />
+
+              <h5>
+                <strong>Experience Counts:</strong>
+              </h5>
+              <p>We’ve been building websites for a very long time. From startups to large enterprises, and across all industries and markets, we’ve done almost everything under the sun in terms of website development.</p>
+              <p>Our ability to build dynamic, personalized user-centric experiences, as well as eCommerce websites with clear purchasing pathways, enables your brand to explore innovative opportunities to reach your audience, keep them engaged, and build brand loyalty. Naturally, nowadays, that includes mobile-responsive website development as a given.</p>
+              <br />
+
+              <h5>
+                <strong>Development Philosophy:</strong>
+              </h5>
+              <p>
+                Development is a critical part of any project team we assemble. At
+                <strong>infinytel</strong>, website development starts on day one of any project. Instead of bringing in our developers to code after all the key decisions have already been made, we ensure their expertise is part of key conversations from the beginning. This fully integrated team enables rapid decision making about direction and feasibility during planning and design phases.
+              </p>
+              <p>
+                While we take a technology-agnostic approach – we want to recommend the right solution, not the solution we happen to know best – our teams are constantly training and deepening their expertise on the platforms we build on, many of which are
+                <strong>infinytel</strong> partners, helping to ensure you always have access to cutting-edge expertise.
+              </p>
+
+              <img src="http://localhost:3000/images/web-services/computer.jpg" />
+              <br />
+              <br />
+
+              <h5>
+                <strong>Our Process</strong>
+              </h5>
+
+              <p>Our team has mastered multiple development approaches across various platforms and technologies. We’re more than happy to work in multiple ways, from agile methodologies to Waterfall preplanned phases. However, we do find that the majority of our clients prefer a hybrid approach, where we build using a Waterfall methodology, and then add new features and improvements in sprints (Agile).</p>
+              <br />
+
+              <p>
+                No matter how we build, our process is iterative and includes multiple phases of revisions and cross-disciplinary reviews to ensure the ultimate solution is as good as it can possibly be. At
+                <strong>infinytel</strong>, we take pride in the quality of our work. In order to ensure we’re meeting our own high standards – as well as yours – we have a team dedicated to reviewing, testing, and providing actionable feedback on everything that we produce. Focusing on functionality, performance, reliability, and security, the team runs through over 100 check points and works with the rest of the development team to squash bugs and enhance the website.
+              </p>
+              <br />
+              <br />
+
+              <ol>
+                <li>
+                  <h5>
+                    <strong>Web development</strong>
+                  </h5>
+                  <br />
+
+                  <h2>WEBSITE DESIGN @ INFINYTEL</h2>
+                  <p>Small business with a character and a style unique enough to impress!</p>
+                  <br />
+                  <br />
+
+                  <h5>
+                    <strong>WE DESIGN TO MAKE FIRST IMPRESSION AS WELL AS TO CREATE BUSINESS AWARENESS WITH OUR AFFORDABLE WEB DESIGNING</strong>
+                  </h5>
+                  <p>
+                    <strong>Infinytel</strong> Web Design provides website design services with CMS such as WordPress, Drupal, Joomla and others. We offer free hosting and domain registration for the first year. Our web solutions include Schools, Universities, Tours & Safari companies, NGOs and various institutions as well as E-commerce. We design Tours and Safari website for Companies because we are very familiar with the techniques.
+                  </p>
+                  <br />
+
+                  <p>Best websites which can meet the need and goals for your business is our passion; your target audience is what matters for us. Factor such as responsiveness, loading speed, best UX design and others will make you rank higher on search engines. Let us increase sales and leads from your customers</p>
+                  <br />
+
+                  <p>Our Development process includes Research and analysis, Initial layout design, complete design, Content, Training and support.</p>
+                  <br />
+                  <br />
+                </li>
+
+                <li>
+                  <h5>
+                    <strong>Digital Marketing</strong>
+                  </h5>
+                  <br />
+
+                  <h2>Digital Marketing @ Inifinytel In Modern Age</h2>
+                  <p>You need a digital marketing campaign to make your online presence active so as to grow your business. We provide Digital Marketing strategies, analysis, and research.</p>
+                  <br />
+
+                  <h5>
+                    <strong>We offer</strong>
+                  </h5>
+                  <ul>
+                    <li>
+                      <p>Pay per Click (PPC),</p>
+                    </li>
+                    <li>
+                      <p>Google Search SEO,</p>
+                    </li>
+                    <li>
+                      <p>Social media advertising such as Facebook and Instagram,</p>
+                    </li>
+                    <li>
+                      <p>Email marketing</p>
+                    </li>
+                    <li>
+                      <p>Display Advertisement.</p>
+                      <br />
+                      <br />
+                    </li>
+                  </ul>
+
+                  <h2>SEO</h2>
+                  <h5>
+                    <strong>Great SEO strategy brings together code, content, and context to make you discoverable and valuable to your customer.</strong>
+                  </h5>
+
+                  <p>
+                    Focus on keywords and rankings, and you risk missing the SEO forest for the trees. Search tells a story: about your brand, you’re offering, and your reputation. Search engines put human users in control of how they research, learn, and buy – and there lies
+                    the
+                    <strong>opportunity</strong> and
+                    the
+                    <strong>challenge</strong>. Make yourself a relevant, informative source for searchers, and potential customers will quickly come to trust you (maybe even love you). Mismanage your
+                    <strong>SEO</strong> and you become an irritant, or worse, invisible.
+                  </p>
+                  <br />
+
+                  <p>
+                    SEO throws up new technical challenges all the time, from
+                    <strong>algorithm changes</strong> to the impact of voice and AR/VR. And a good SEO agency naturally lives and breathes the technical stuff. Rankings matter, but SEO is not just about what ranks where. It’s
+                    <strong>organic marketing</strong> – it’s about how content, user experience, and earned media combine to make your brand discoverable and attractive to your audience. That kind of holistic thinking demands not a technician, but a partner – which is exactly what BFM strives to be.
+                  </p>
+                  <br />
+                  <br />
+
+                  <h2>Why SEO Strategy Matters</h2>
+                  <p>
+                    We’ve been hearing
+                    <strong>SEO</strong> is dead for about as long as we’ve been doing
+                    <strong>SEO</strong>. The work has changed (a lot), but SEO matters today for the reasons it always has. Search is where most customer journeys begin, it’s often where they end, and it’s usually a big part of the middle.
+                  </p>
+                  <p>
+                    Users worldwide make 3.5 billion searches each day, which is an astonishing
+                    <strong>1.2 trillion searches per year</strong> – on Google alone. In this sea of search, how your brand stands out (and for what reasons) is largely determined by your SEO strategy – and how well it’s executed.
+                  </p>
+                  <br />
+
+                  <p>And in a fast-paced world where irrelevance and interruption are tolerated less and less, showing up in search results is one of your best opportunities to reach customers the moment they’re open to hearing from you. What surfaces about your brand in search is often the first impression people get – and we all know how much first impressions count. If you’re authoritative, impressive, and easy to find, it could mean a new customer. Otherwise, it may be a missed opportunity.</p>
+                  <br />
+                  <br />
+
+                  <h2>Everything is Connected</h2>
+                  <p>
+                    At
+                    <strong>infinytel</strong>, we take a big-picture approach to the SEO services we provide, for a couple reasons.
+                    First, we believe that these days, there's no bright line between search and organic marketing when it comes to showcasing your brand or getting discovered. Second, we're working shoulder to shoulder with organic and paid marketers, content marketers, PR experts, developers, our team, and many other talented folks - we couldn't live in a silo even if we wanted.
+                  </p>
+
+                  <p>This holistic approach informs everything we do. We don't chase vanity metrics or industrial quantities of back links. What matters to us - just as it does to you - is brand lift and measurable impact on business results.</p>
+                  <br />
+                  <br />
+
+                  <h2>Our SEO Process</h2>
+                  <p>If we're building your website, rest assured: technical optimization - title tags, redirects, structured data, and all the good stuff - is baked into the process. When you work with us on search marketing, we think through the technical, but we also think beyond it. Clients can and do bring us on for SEO audits, and we're always happy to help uncover fixes that can give you a bump in the rankings. But we'd link to think our true value comes from being an organic marketing partner.</p>
+                  <br />
+
+                  <p>
+                    The SEO strategy we adopt may be part of a fully integrated
+                    <strong>digital marketing strategy</strong> or a more channel-specific effort (depending on your needs) and will set the benchmarks that will help to measure success. We're equally attentive to the needs of global brands and the basics of local
+                    <strong>SEO marketing</strong>. We'll assemble the talent you need from across disciplines to cover everything from your social media presence, reviews, and sites where you're linked to our talked about. We'll look for, or create, opportunities in content marketing, influencer, and digital PR.
+                  </p>
+                  <br />
+                  <h5>Increase your sales and leads today!!!!!</h5>
+                  <br />
+                  <br />
+                </li>
+
+                <li>
+                  <h5>
+                    <strong>Mobile Apps Development</strong>
+                  </h5>
+                  <br />
+
+                  <h2>MOBILE APPS DEVELOPMENT @ INFINYTEL</h2>
+                  <p>Building an app for your brand isn’t about filling a missing channel. It’s about giving your customers a richer experience that puts their needs and motivations first.</p>
+                  <p>Mobile phone users spend about 90 percent of their mobile using apps, Mobile apps account for more than half of all time spent by mobile phone users. We design best and user-friendly mobile apps with latest technology used.</p>
+
+                  <ul>
+                    <li>
+                      <p>We have experienced development team</p>
+                    </li>
+                    <li>
+                      <p>We provide training and support</p>
+                    </li>
+                  </ul>
+                  <br />
+
+                  <img src="http://localhost:3000/images/web-services/mobile.png" />
+                  <br />
+
+                  <p>
+                    Mobile technology has
+                    <strong>taken</strong> over the world, and it’s not done growing. Tablets and phones have become some of the most critical channels for brands to engage with their customers. That doesn’t mean that an app is right for everyone. Mobile web design has come a long way, and websites offer versatility that apps can’t always match. Also, new mobile apps can be hard to discover, which means you need to be prepared to market an app robustly.
+                  </p>
+                  <p>
+                    But if your app has a
+                    <strong>valuable</strong> job to do and the right support behind it, it can be an incredibly powerful tool for your brand. It might even achieve the Holy Grail – daily use and engagement by your target audience.
+                  </p>
+                  <br />
+
+                  <p>
+                    As with any design work we do, at infinytel we take a
+                    <strong>human-centric</strong> approach to app design that involves getting to know your users in depth. An app is a tool, and we spend a lot of time designing not just the look and feel, but the cues and interactions that inform and guide users.
+                  </p>
+                  <p>But that doesn’t mean we can’t also have fun – we also spend time thinking about the little touches that will surprise and delight people, creating moments that express your brand’s personality and keep your app fresh and interesting to use.</p>
+                  <br />
+                  <br />
+
+                  <h2>Built for Your Brand</h2>
+                  <p>Before our talented designers start thinking about how to approach your app design, we begin a deep discovery process that includes stakeholder interviews, business data research, and prioritization of your brand’s objectives. It’s critical for us to understand what you intend to accomplish with your app, and what actions you want your users to take.</p>
+                  <p>It’s also important for us to explore what your team likes, or doesn’t like, in the design of other apps, so we can gather direction and gain inspiration. We like to open a dialogue from the very beginning of the design process, to ensure we understand your needs and expectations and can give good advice about how best to meet them.</p>
+                  <br />
+                  <br />
+
+                  <h2>Created For Users</h2>
+                  <p>
+                    It’s been a decade since apps were introduced to the mobile market. Over that time, apps have changed dramatically. As user behavior, preferences, and expectations have evolved, so has the thinking and execution behind app design – being
+                    <strong>human-centric</strong> and focused on users’ needs is now make or break for brands entering the space.
+                  </p>
+                  <p>
+                    During our app design process, we do
+                    <strong>extensive</strong> audience research in order to understand how an app can solve your customers’ problems. Our goal? To create personas and example user journeys built on data, user interviews, user testing, and competitor analysis.
+                  </p>
+                  <br />
+
+                  <p>
+                    This thinking is what connects the app’s design, messaging, and task flows into a
+                    <strong>seamless</strong> experience, encouraging loyal customers to engage day after day.
+                  </p>
+                  <br />
+                  <br />
+
+                  <h2>Designed for Engagement</h2>
+                  <p>
+                    Apps work best when designers get out of the way of what users want to do, so naturally, we design with that
+                    <strong>critical</strong> point in mind. Above all else, it’s important to design
+                    <strong>interactions</strong> that make tasks easy for users to understand and execute, which also helps to streamline app development. But that doesn’t mean the
+                    <strong>imagination</strong> has no place: an app should be enjoyable to spend time with, too.
+                  </p>
+                  <br />
+
+                  <p>
+                    That’s why our designers are always looking for places where accomplishing a task can add a little moment of joy to a user’s day – and create a
+                    <strong>positive</strong> interaction that builds loyalty to your brand.
+                  </p>
+                  <br />
+                  <br />
+                  <br />
+                </li>
+              </ol>
+            </div>
+          </div>
         </div>
       </div>
     </home>
@@ -924,6 +1191,7 @@ export default {
               border-right: .5px solid #eaeaea
               border-left: .5px solid #eaeaea
               padding: 0 50px
+
             ul.links
                 // width: 500px
                 position: sticky
